@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: copyright
+# key: copyright
+# --
+/**
+ * Copyright SMART Technologies `(format-time-string "%Y")`.
+ * User: `(user-login-name)`
+ * Date: `(format-time-string "%y-%m-%d")`
+ * Time: `(format-time-string "%l:%M %p")`
+ */
+

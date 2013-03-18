@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: it
+# key: it
+# --
+it("should $1", function() {
+           // Arrange
+           $0
+           // Act
+
+           // Assert
+});

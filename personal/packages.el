@@ -1,3 +1,11 @@
-;;;; configure which additional packages are required
+;;; packages.el --- configure additional ELPA packages required
 
-;; (prelude-ensure-modules-deps '(some-package some-other-package))
+;;; Commentary:
+
+;; See ../README.md
+
+;;; Code:
+
+(prelude-ensure-module-deps '(js2-mode js2-refactor))
+
+;;; packages.el ends here

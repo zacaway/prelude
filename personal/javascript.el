@@ -10,11 +10,11 @@
 
 (require 'projectile)
 (add-to-list 'projectile-project-compilation-commands
-             '("mvn compile" .
+             '("mvn compile clean" .
                (lambda (dir)
                  (file-exists-p (expand-file-name "pom.xml" dir)))))
 (add-to-list 'projectile-project-test-commands
-             '("mvn clean install -Dtest=unit" .
+             '("mvn clean install -Dtest=unit clean" .
                (lambda (dir)
                  (file-exists-p (expand-file-name "pom.xml" dir)))))
 

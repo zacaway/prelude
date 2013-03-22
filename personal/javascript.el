@@ -4,11 +4,6 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 
-(require 'js2-refactor)
-(js2r-add-keybindings-with-prefix "C-c C-m")
-
-
-(require 'projectile)
 (add-to-list 'projectile-project-compilation-commands
              '("mvn compile clean" .
                (lambda (dir)
@@ -34,9 +29,9 @@
                     (s-replace "/test/unit/" "/src/" (concat (s-chop-suffix suffix basename) "." extension)))
                   projectile-test-files-suffices))))
 
-;; (add-hook 'js2-mode-hook (lambda ()
-;;                            (require 'js2-refactor)
-;;                            (js2r-add-keybindings-with-prefix "C-c C-m")
+(add-hook 'js2-mode-hook (lambda ()
+                            (require 'js2-refactor)
+                            (js2r-add-keybindings-with-prefix "C-c C-m")))
 
 ;;                            (require 'projectile)
 ;;                            (add-to-list 'projectile-project-compilation-commands

@@ -11,6 +11,8 @@
 (global-set-key (kbd "s-+") 'text-scale-increase)
 (global-set-key (kbd "s--") 'text-scale-decrease)
 
+(global-set-key (kbd "C-M-h") 'mark-defun)
+
 (global-set-key (kbd "M-i") 'ido-goto-symbol)
 
 (global-set-key (kbd "M-n") 'smart-symbol-go-forward)

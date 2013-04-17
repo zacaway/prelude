@@ -12,6 +12,8 @@
 (require 'prelude-org)
 (require 'prelude-xml)
 
-(prelude-ensure-module-deps '(js2-mode js2-refactor))
+(prelude-ensure-module-deps '(js2-mode
+                              js2-refactor
+                              tuareg))
 
 ;;; packages.el ends here

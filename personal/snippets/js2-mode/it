@@ -1,9 +1,8 @@
-# -*- mode: snippet -*-
-# name: it
 # key: it
+# name: it
 # --
-it("should $1", function() {
-           // Arrange
+it("should $1", function () {
+           // Assign
            $0
            // Act
 

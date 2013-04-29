@@ -14,6 +14,7 @@
 
 (prelude-ensure-module-deps '(js2-mode
                               js2-refactor
-                              tuareg))
+                              tuareg
+                              golden-ratio))
 
 ;;; packages.el ends here

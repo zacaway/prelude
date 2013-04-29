@@ -29,3 +29,6 @@
 ;;; eshell setup
 (add-hook 'eshell-mode-hook (lambda ()
                               (yas-minor-mode -1)))
+
+;;; enable golden ratio mode
+(golden-ratio-enable)

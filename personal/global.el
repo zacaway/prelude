@@ -31,4 +31,4 @@
                               (yas-minor-mode -1)))
 
 ;;; enable golden ratio mode
-(golden-ratio-enable)
+(golden-ratio-mode)

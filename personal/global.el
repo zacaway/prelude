@@ -8,6 +8,8 @@
 
 (global-set-key (kbd "C--") 'negative-argument)
 
+(global-set-key (kbd "C-^") 'join-line)
+
 (global-set-key (kbd "s-+") 'text-scale-increase)
 (global-set-key (kbd "s--") 'text-scale-decrease)
 

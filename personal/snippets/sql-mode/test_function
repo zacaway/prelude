@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: test_function
+# key: test
+# --
+CREATE OR REPLACE FUNCTION $1() RETURNS SETOF TEXT AS $$
+BEGIN
+  RETURN NEXT $0
+END;
+$$ LANGUAGE plpgsql;

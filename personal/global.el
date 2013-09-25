@@ -1,3 +1,7 @@
+;;; initial frame size & position
+(setq initial-frame-alist
+      '((top . 1) (left . 800) (width . 100) (height . 70)))
+
 ;;; define modifier keys for mac
 (setq mac-command-modifier 'super)
 (setq mac-option-modifier 'meta)

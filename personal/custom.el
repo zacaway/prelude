@@ -4,6 +4,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(js2-highlight-external-variables nil)
+ '(org-confirm-babel-evaluate (lambda (lang body) (not (string= lang "plantuml"))))
+ '(org-export-odt-preferred-output-format "docx")
  '(projectile-svn-command "find . -name .svn -prune -o -type f -print0"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

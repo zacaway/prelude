@@ -1,10 +1,7 @@
-# -*- mode: snippet -*-
-# name: define
 # key: define
+# name: define
 # --
-define([
-    $1
-], function ($2) {
+define(function (require) {
     "use strict";
 
     $0

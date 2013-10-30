@@ -2,9 +2,5 @@
 # name: it
 # --
 it("should $1", function () {
-           // Assign
-           $0
-           // Act
-
-           // Assert
+    $0
 });

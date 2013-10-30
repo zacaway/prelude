@@ -1,8 +1,7 @@
-# -*- mode: snippet -*-
-# name: describe
 # key: describe
+# name: describe
 # --
-describe("${1:Test case}", function() {
+describe("${1:Test case}", function () {
 
     $0
 });

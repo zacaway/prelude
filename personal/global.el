@@ -29,11 +29,6 @@
 (define-key global-map [remap exchange-point-and-mark] ; i.e. C-x C-x
   'exchange-point-and-mark-no-activate)
 
-;;; default CL implementation started via M-x slime
-(if (file-exists-p "~/.quicklisp/slime-helper.el")
-    (load (expand-file-name "~/.quicklisp/slime-helper.el")))
-(setq slime-default-lisp 'sbcl)
-
 ;;; eshell setup
 (add-hook 'eshell-mode-hook (lambda ()
                               (yas-minor-mode -1)))

@@ -16,6 +16,7 @@
                               js2-refactor
                               tuareg
                               golden-ratio
-                              htmlize))
+                              htmlize
+                              monky))
 
 ;;; packages.el ends here

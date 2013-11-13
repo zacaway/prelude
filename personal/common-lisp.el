@@ -5,7 +5,7 @@
     (load (expand-file-name "~/.quicklisp/slime-helper.el")))
 
 ;;; default CL implementation started via M-x slime
-(setq slime-default-lisp 'clisp)
+(setq slime-default-lisp 'sbcl)
 
 
 ;(setq cltl2-url "file:///usr/share/doc/cltl/clm/node1.html")

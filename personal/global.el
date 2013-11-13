@@ -35,3 +35,7 @@
 
 ;;; enable golden ratio mode
 (golden-ratio-mode)
+
+;;; enable fast hg status with monky
+;;; see: https://github.com/ananthakumaran/monky
+(setq monky-process-type 'cmdserver)

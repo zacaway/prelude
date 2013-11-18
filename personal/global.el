@@ -39,3 +39,7 @@
 ;;; enable fast hg status with monky
 ;;; see: https://github.com/ananthakumaran/monky
 (setq monky-process-type 'cmdserver)
+
+;;; disable flycheck doc warnings in elisp buffers
+(eval-after-load 'flycheck
+  '(setq flycheck-checkers (delq 'emacs-lisp-checkdoc flycheck-checkers)))

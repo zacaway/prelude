@@ -17,6 +17,7 @@
                               tuareg
                               golden-ratio
                               htmlize
+                              simple-httpd
                               monky))
 
 ;;; packages.el ends here

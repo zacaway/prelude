@@ -33,6 +33,12 @@
 (add-hook 'eshell-mode-hook (lambda ()
                               (yas-minor-mode -1)))
 
+;;; terminal-only settings
+(unless (display-graphic-p)
+  (when (require 'w3m nil :noerror)
+    (message "Using w3m browser")
+    (setq browse-url-browser-function 'w3m-browse-url)))
+
 ;;; enable golden ratio mode
 (golden-ratio-mode)
 

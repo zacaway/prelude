@@ -17,7 +17,13 @@
                               tuareg
                               golden-ratio
                               htmlize
-                              simple-httpd
-                              monky))
+                              ag
+                              smartparens
+                              monky
+                              gnuplot
+                              tss
+                              ledger-mode
+                              flycheck-ledger
+                              dklrt))
 
 ;;; packages.el ends here

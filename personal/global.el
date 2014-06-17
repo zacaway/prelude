@@ -49,3 +49,9 @@
 ;;; disable flycheck doc warnings in elisp buffers
 (eval-after-load 'flycheck
   '(setq flycheck-checkers (delq 'emacs-lisp-checkdoc flycheck-checkers)))
+
+;;; ag "the silver searcher" configuration
+(setq ag-highlight-search t)
+
+;;; tune emacs GC (as recommended by https://github.com/lewang/flx)
+(setq gc-cons-threshold 20000000)

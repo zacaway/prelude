@@ -1,10 +1,19 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (autoload 'js2-mode "js2-mode" nil t)
 
-(add-hook 'js2-mode-hook
-          (lambda ()
-            (require 'js2-refactor)
-            (js2r-add-keybindings-with-prefix "C-c C-r")))
+(add-hook 'js2-mode-hook (lambda ()
+                           (auto-complete-mode t)
+                           (tern-mode t)))
+
+(eval-after-load 'js2-mode
+  '(progn
+     (require 'js2-refactor)
+     (js2r-add-keybindings-with-prefix "C-c C-r")))
+
+(eval-after-load 'tern
+  '(progn
+     (require 'tern-auto-complete)
+     (tern-ac-setup)))
 
 ;; See: http://ternjs.net
 ;; (add-to-list 'load-path "~/Projects/tern/emacs/")

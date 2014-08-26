@@ -6,6 +6,7 @@
 
 ;;; Code:
 
+(require 'prelude-ido)
 (require 'prelude-common-lisp)
 (require 'prelude-emacs-lisp)
 (require 'prelude-css)
@@ -14,6 +15,9 @@
 
 (prelude-ensure-module-deps '(js2-mode
                               js2-refactor
+                              tern
+                              tern-auto-complete
+                              tss
                               tuareg
                               golden-ratio
                               htmlize
@@ -21,7 +25,6 @@
                               smartparens
                               monky
                               gnuplot
-                              tss
                               ledger-mode
                               flycheck-ledger
                               dklrt))

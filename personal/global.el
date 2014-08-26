@@ -19,8 +19,6 @@
 
 (global-set-key (kbd "C-M-h") 'mark-defun)
 
-(global-set-key (kbd "M-i") 'ido-goto-symbol)
-
 (global-set-key (kbd "M-n") 'smart-symbol-go-forward)
 (global-set-key (kbd "M-p") 'smart-symbol-go-backward)
 

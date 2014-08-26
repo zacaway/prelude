@@ -4,6 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ag-highlight-search t)
+ '(delete-by-moving-to-trash t)
  '(gc-cons-threshold 20000000)
  '(js2-basic-offset 2)
  '(js2-highlight-external-variables nil)

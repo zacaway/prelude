@@ -27,6 +27,8 @@
 (define-key global-map [remap exchange-point-and-mark] ; i.e. C-x C-x
   'exchange-point-and-mark-no-activate)
 
+(global-set-key (kbd "M-;") 'smart-comment-dwim)
+
 ;;; eshell setup
 (add-hook 'eshell-mode-hook (lambda ()
                               (yas-minor-mode -1)))

@@ -5,8 +5,8 @@
   (electric-pair-mode -1))
 
 ;;; disable paredit-mode
-(eval-after-load "paredit"
-  (paredit-mode -1))
+;(eval-after-load "paredit"
+;  (paredit-mode -1))
 
 ;;; enable smartparens globally
 (smartparens-global-mode t)

@@ -40,7 +40,7 @@
     (setq browse-url-browser-function 'w3m-browse-url)))
 
 ;;; enable golden ratio mode
-(golden-ratio-mode)
+;; (golden-ratio-mode)
 
 ;;; enable fast hg status with monky
 ;;; see: https://github.com/ananthakumaran/monky

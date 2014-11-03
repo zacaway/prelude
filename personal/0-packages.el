@@ -10,11 +10,13 @@
                               ;; JS/web development
                               js2-mode
                               js2-refactor
+                              js-comint
                               tern
                               tern-auto-complete
                               tss
                               htmlize
                               simple-httpd
+                              geben
                               ;; OCaml
                               tuareg
                               ;; Utilities
@@ -26,6 +28,7 @@
                               ledger-mode
                               flycheck-ledger
                               dklrt
+                              guide-key
                               ;; Dired extensions
                               dired+))
 

@@ -49,3 +49,10 @@
 ;;; disable flycheck doc warnings in elisp buffers
 (eval-after-load 'flycheck
   '(setq flycheck-checkers (delq 'emacs-lisp-checkdoc flycheck-checkers)))
+
+;;; enable tail mode for log files
+(add-to-list 'auto-mode-alist '("\\.log\\'" . auto-revert-tail-mode))
+
+;; enable guide-key mode
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-c" "C-c p"))
+(guide-key-mode 1)

@@ -27,7 +27,7 @@
 ;;   "Hard-coded test suffix for WBP project.  PROJECT-TYPE is ignored."
 ;;   "_spec")
 
-(setq inferior-js-program-command "env NODE_NO_READLINE=1 nodejs")
+(setq inferior-js-program-command "env NODE_NO_READLINE=1 node")
 (add-hook 'inferior-js-mode-hook
           (lambda ()
             ;; We like nice colors

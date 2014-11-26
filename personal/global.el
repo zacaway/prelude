@@ -29,6 +29,8 @@
 
 (global-set-key (kbd "M-;") 'smart-comment-dwim)
 
+(global-set-key (kbd "C-c q") 'swap-quotes)
+
 ;;; eshell setup
 (add-hook 'eshell-mode-hook (lambda ()
                               (yas-minor-mode -1)))
@@ -56,3 +58,6 @@
 ;; enable guide-key mode
 (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-c" "C-c p"))
 (guide-key-mode 1)
+
+;; enable discover mode
+(global-discover-mode 1)

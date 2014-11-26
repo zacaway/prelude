@@ -10,6 +10,7 @@
                               ;; JS/web development
                               js2-mode
                               js2-refactor
+                              discover-js2-refactor
                               js-comint
                               tern
                               tern-auto-complete
@@ -20,6 +21,7 @@
                               ;; OCaml
                               tuareg
                               ;; Utilities
+                              discover
                               golden-ratio
                               ag
                               smartparens

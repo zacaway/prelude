@@ -1,3 +1,7 @@
+;; load PHP Repl (https://github.com/ieure/php_repl)
+;; Usage: run-php
+(require 'php-repl)
+
 (defun php-debug-test (filename)
   "Run current or given PHP script for debugging with geben."
   (interactive "fPHP test file: ")

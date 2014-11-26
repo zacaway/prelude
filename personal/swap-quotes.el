@@ -5,10 +5,10 @@
 (defun beginning-of-string ()
   "Moves to the beginning of a syntactic string."
   (interactive)
-  (unless (point-in-string-p (point))
-    (error "You must be in a string for this command to work"))
-  (while (point-in-string-p (point))
-    (forward-char -1))
+  (let ((bos (nth 8 (syntax-ppss (point)))))
+    (unless bos
+      (error "You must be in a string for this command to work"))
+    (goto-char bos))
   (point))
 
 (defun end-of-string ()

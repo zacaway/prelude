@@ -3,7 +3,8 @@
   (interactive "fPHP test file: ")
   (call-interactively 'geben)
   (shell-command
-   (concat "XDEBUG_CONFIG='idekey=miket-php-debug' php "
+   ; use idekey that matches Chome Xdebug plugin default
+   (concat "XDEBUG_CONFIG='idekey=XDEBUG_ECLIPSE' php "
            (projectile-project-root) "script/test "
            (file-relative-name filename (projectile-project-root))
            " &")))
